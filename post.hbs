@@ -1,0 +1,26 @@
+{{!< default}}
+
+{{#post}}
+  <!--article class="post-container post-container--single"-->
+  <article class="post mdl-cell mdl-cell--12-col">
+    <header class="mdl-grid mdl-cell mdl-cell--12-col" >
+      {{#if image}} <div class="image mdl-cell mdl-cell--12-col" style="background: url({{image}}) center / cover;"></div>{{/if}}
+      <h1 class="title mdl-cell mdl-cell--12-col">{{{title}}}</h1>
+      <div class="meta mdl-cell mdl-cell--6-col">
+        <time datetime="{{date format="DD MMM YYYY"}}" class="post-meta__date date">{{date format="DD MMM YYYY"}}</time> &#8226; <span class="post-meta__tags tags">{{tags prefix="on "}}</span>
+        <!--span class="post-meta__author author"><img src="{{author.image}}" alt="profile image for {{author.name}}" class="avatar post-meta__avatar" /> by {{author.name}}</span-->
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+        {{> share}}
+      </div>
+    </header>
+
+    <section class="{{post_class}}">
+      {{content}}
+    </section>
+
+  </article>
+
+  {{> comments }}
+
+{{/post}}

@@ -1,0 +1,40 @@
+{{!< default}}
+<div class="mdl-cell mdl-cell--12-col">
+<h1 class="tag-title mdl-typography--display-1">Posts about <span class="tag mdl-typography--display-1-color-contrast"> {{tag.name}}</span></h1>
+</div>
+<div class="post-index">
+
+  {{#foreach posts}}
+
+    <div class="mdl-cell mdl-cell--12-col">
+      <div class="mdl-card post-card mdl-shadow--2dp">
+        <div class="mdl-card__title" {{#if image}} style="background: url('{{image}}') center / cover; color: white;" {{/if}}>
+          <h2 class="mdl-card__title-text"><a href="{{url}}" class="" title="link to {{{title}}}">{{{title}}}</a></h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          {{excerpt}}&hellip;
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a href="{{url}}" title="link to {{{title}}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              Read it
+          </a>
+          <div class="share" data-title="{{{title}}}" data-url="{{url absolute="true"}}" data-content="{{excerpt}}&hellip;">
+            {{> share}}
+          </div>
+        </div>
+        <div class="mdl-card__menu">
+          <div class="meta">
+            <time datetime="{{date format="DD MMM YYYY"}}" class="date">{{date format="DD MMM YYYY"}}</time> &#8226;
+            <span class="tags">{{tags prefix="on "}}</span>
+          </div>
+          <!-- <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+              <i class="material-icons">share</i>
+            </button> -->
+        </div>
+      </div>
+    </div>
+  {{/foreach}}
+  <div class="mdl-cell mdl-cell--12-col">
+    {{pagination}}
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "name": "Material Design Lite - Ghost",
+  "version": "0.0.1",
+  "authors": [
+    "Joan Maria Talarn <jmtalarn@gmail.com>"
+  ],
+  "description": "Ghsot theme applying the Material Design Lite package",
+  "keywords": [
+    "Ghost",
+    "blog",
+    "material",
+    "materialdesign",
+    "design",
+    "google",
+    "theme"
+  ],
+  "license": "MIT",
+  "homepage": "www.uiuxlearner.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.4.0",
+    "material-design-lite": "~1.0.4"
+  }
+}
