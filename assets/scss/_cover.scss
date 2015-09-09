@@ -1,0 +1,124 @@
+.blog-header-transparent .mdl-layout__header,
+.blog-header-transparent .mdl-layout__header-row,
+.blog-header-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .mdl-layout__header-row {
+    padding: 0 1em !important;
+  }
+
+  .mdl-layout__header:not(.mdl-layout__header--waterfall) {
+    .blog-title .mdl-layout-title {
+      position: relative;
+      left: 2em;
+    }
+  }
+}
+
+.blog-description .description {
+  font-weight: lighter;
+}
+
+img.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.mdl-layout__drawer {
+  &> .mdl-layout-title {
+    margin: 0 auto;
+    padding: inherit;
+  }
+
+  .description {
+    @extend .mdl-typography--body-1-force-preferred-font;
+    @extend .mdl-typography--font-thin;
+    margin: 0 1em;
+  }
+}
+
+.navigation-cover {
+  &.links {
+    a.mdl-button {
+      display: none;
+    }
+  }
+
+  &.buttons {
+    a.mdl-navigation__link {
+      display: none;
+    }
+
+    a.mdl-button {
+      background-color: white;
+
+      &:hover {
+        background-color: rgb(224,224,224);
+      }
+    }
+  }
+}
+
+header:not(.mdl-layout__header--waterfall) {
+  img.logo {
+    display: inline;
+  }
+
+  .blog-description {
+    display: none;
+  }
+}
+
+.mdl-layout__header:not(.mdl-layout__header--waterfall) {
+  .blog-title {
+    .mdl-layout-title {
+      img.logo {
+        width: 2.5em;
+      }
+    }
+  }
+}
+
+.mdl-layout__header--waterfall:not(.is-compact) {
+  height: 100%;
+
+  .mdl-layout__header-row {
+    display: block;
+    text-align: center;
+    height: initial;
+  }
+
+  .mdl-navigation {
+    display: initial;
+  }
+
+  .blog-title {
+    .mdl-layout-title {
+      font-size: 12vmin;
+      margin: 1em;
+    }
+  }
+
+  .blog-description {
+    font-size: 5vmin;
+    line-height: 1.5em;
+
+    .description {
+      margin-top: 1em;
+    }
+
+    nav {
+      .mdl-button {
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .social-box {
+    display: block !important;
+  }
+}

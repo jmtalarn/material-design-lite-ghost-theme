@@ -1,0 +1,59 @@
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.blog-header-transparent header.cover{
+  {{#if @blog.cover}}background: url({{@blog.cover}}) center / cover;{{/if}}
+}
+</style>
+
+
+<!--header class="mdl-layout__header {{#is "home"}}mdl-layout__header--waterfall{{/is}}"-->
+<header class="cover mdl-layout__header">
+
+  <!-- Top row, always visible -->
+  <div class="mdl-layout__header-row blog-title">
+    <!-- Title -->
+    <span class="mdl-layout-title ">
+      {{#if @blog.logo}}
+      <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="logo" />
+      {{/if}}
+
+      {{@blog.title}}
+
+    </span>
+    <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+          {{> social}}
+      </nav>
+  </div>
+  <!-- Bottom row, not visible on scroll -->
+  <div class="mdl-layout__header-row blog-description">
+    <nav class="navigation-cover buttons">
+    {{navigation}}
+  </nav>
+    <div class="description">{{@blog.description}}</div>
+
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+
+    </nav>
+  </div>
+
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title"><h4>{{@blog.title}}</h4>
+    {{#if @blog.logo}}
+    <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="logo" />
+    {{/if}}
+  </span>
+
+  <span class="description">{{@blog.description}}</span>
+  <hr>
+  <h5>Content</h5>
+  <nav class="mdl-navigation navigation-cover links">
+    {{navigation}}
+  </nav>
+  <hr>
+  <h5>Contact</h5>
+  {{> social}}
+</div>

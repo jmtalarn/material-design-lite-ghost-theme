@@ -1,0 +1,26 @@
+.post-index {
+  width: 100%;
+  .post-card {
+
+    // margin: 0 auto;
+    width: 100%;
+    &> .mdl-card__title {
+      color: white;
+      @extend .mdl-color--indigo;
+      height: 6em;
+      .mdl-card__title-text {
+        font-weight: bolder;
+        a {
+          color: white;
+					text-decoration: none;
+        }
+      }
+    }
+    .meta {
+      color: white;
+      font-size: 0.8em;
+      font-weight: lighter;
+    }
+    .share{float: right; }
+  }
+}

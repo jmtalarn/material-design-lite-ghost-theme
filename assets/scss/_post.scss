@@ -1,0 +1,45 @@
+article.post {
+  header {
+    .image {
+      height: 10em;
+    }
+    h1 {
+      margin: 0;
+    }
+    margin-bottom: 1em;
+    margin-left: -1em;
+  }
+  section.post {
+    text-align: justify;
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+      display: block;
+      margin: 0 auto;
+    }
+    blockquote {
+      p {
+        font-size: 4vh;
+        font-weight: 300;
+        padding: 1em;
+        text-align: left;
+      }
+      @extend .mdl-color--indigo-50;
+      &::before {
+        color: #fafafa;
+        font-size: 2em;
+        padding-left: 3px;
+        @extend .fa;
+        content: "\f10e";
+        position: initial;
+      }
+      &::after {
+        content: "";
+        margin-left: -0.05em;
+      }
+    }
+  }
+}

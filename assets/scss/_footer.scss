@@ -1,0 +1,22 @@
+footer.mdl-mini-footer {
+  @extend .mdl-color--white;
+  ul {
+    list-style-type: none;
+    font-size: 10px;
+    li {
+      display: inline;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  div,
+  li {
+    @extend .mdl-color-text--grey-800;
+
+    // font-weight: lighter;
+    @extend .mdl-typography--caption-force-preferred-font;
+    @extend .mdl-typography--font-thin;
+  }
+  padding: 1em;
+}

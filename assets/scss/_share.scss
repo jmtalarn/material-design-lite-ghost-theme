@@ -1,0 +1,16 @@
+
+.share-box {
+  float: right;
+
+  .share-text{}
+
+  .fa::before {
+    position: relative;
+    top: 25%;
+  }
+  .share-buttons{
+    display: inline-block;
+    // position: relative;
+    // top: -0.5em;
+  }
+}
