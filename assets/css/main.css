@@ -1037,7 +1037,7 @@ ul, ol {
   opacity: 0.87; }
 
 .mdl-typography--body-1-force-preferred-font, html,
-body, .mdl-layout__drawer .description {
+body, .description {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1137,7 +1137,7 @@ footer.mdl-mini-footer li {
 .mdl-typography--text-capitalize {
   text-transform: capitalize; }
 
-.mdl-typography--font-thin, .mdl-layout__drawer .description, footer.mdl-mini-footer div,
+.mdl-typography--font-thin, .description, footer.mdl-mini-footer div,
 footer.mdl-mini-footer li {
   font-weight: 200 !important; }
 
@@ -11619,12 +11619,20 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
 .blog-description .description {
   font-weight: lighter; }
 
-img.logo {
-  display: block;
-  margin: 0 auto; }
+.mdl-layout__drawer .margin1em {
+  margin: 1em; }
 
-.mdl-layout__drawer .description {
-  margin: 0.5em auto; }
+.mdl-layout__drawer .top-line {
+  border-top: 1px solid #9e9e9e; }
+
+.mdl-layout__drawer .mdl-layout-title {
+  text-align: center;
+  padding: 0; }
+  .mdl-layout__drawer .mdl-layout-title img.logo {
+    width: 8vw; }
+
+.description {
+  text-align: justify; }
 
 .post-index {
   width: 100%; }

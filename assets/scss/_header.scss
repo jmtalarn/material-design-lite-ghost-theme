@@ -5,26 +5,34 @@
      your background is light. */
   color: white;
 }
-
 .blog-description .description {
   font-weight: lighter;
 }
 
-img.logo {
-  display: block;
-  margin: 0 auto;
-}
-
 .mdl-layout__drawer {
-
-  .description {
-    @extend .mdl-typography--body-1-force-preferred-font;
-    @extend .mdl-typography--font-thin;
-    margin: 0.5em auto;
+  .margin1em{
+    margin: 1em;
+  }
+  .top-line{
+    border-top: 1px solid rgb(158,158,158);
+  }
+  .mdl-layout-title {
+    text-align: center;
+    padding: 0;
+    img.logo {
+      width: 8vw;
+      //display: block;
+      //margin: 0 auto;
+    }
 
   }
 }
+.description {
+  @extend .mdl-typography--body-1-force-preferred-font;
+  @extend .mdl-typography--font-thin;
 
+  text-align: justify;
+}
 //  {
 //   &.links {
 //     a.mdl-button {
@@ -54,7 +62,6 @@ img.logo {
 //       }
 //     }
 //   }
-
-  // .social-box {
-  //   display: block !important;
-  // }
+// .social-box {
+//   display: block !important;
+// }

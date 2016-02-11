@@ -40,13 +40,15 @@ header.with-image{
     {{/if}}
   </span>
 
-  <span class="description">{{@blog.description}}</span>
-  <hr>
-  <h5>Content</h5>
-  <nav class="mdl-navigation navigation-cover links">
-    {{navigation}}
-  </nav>
-  <hr>
-  <h5>Contact</h5>
-  {{> social}}
+  <span class="description margin1em">{{@blog.description}}</span>
+  <div class="margin-lr top-line margin1em">
+    <h5>Content</h5>
+    <nav class="mdl-navigation navigation-cover links">
+      {{navigation}}
+    </nav>
+  </div>
+  <div class="margin-lr top-line margin1em">
+    <h5>Contact</h5>
+    {{> social}}
+  </div>
 </div>
