@@ -5,7 +5,8 @@ body {
   @extend .mdl-typography--body-1-force-preferred-font;
 }
 @import 'social';
-@import 'cover';
+//@import 'cover';
+@import 'header'; 
 @import 'index';
 @import 'post';
 @import 'share';

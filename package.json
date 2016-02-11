@@ -1,6 +1,6 @@
 {
   "name": "material-design-lite-ghost",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "gulp": "~3.9.0",

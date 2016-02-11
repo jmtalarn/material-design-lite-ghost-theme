@@ -1,0 +1,60 @@
+.mdl-layout__header,
+.mdl-layout__header-row,
+.mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+.blog-description .description {
+  font-weight: lighter;
+}
+
+img.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.mdl-layout__drawer {
+
+  .description {
+    @extend .mdl-typography--body-1-force-preferred-font;
+    @extend .mdl-typography--font-thin;
+    margin: 0.5em auto;
+
+  }
+}
+
+//  {
+//   &.links {
+//     a.mdl-button {
+//       display: none;
+//     }
+//   }
+//
+//   &.buttons {
+//     a.mdl-navigation__link {
+//       display: none;
+//     }
+//
+//     a.mdl-button {
+//       background-color: white;
+//
+//       &:hover {
+//         background-color: rgb(224,224,224);
+//       }
+//     }
+//   }
+// }
+//
+//
+//     nav {
+//       .mdl-button {
+//         border-radius: 20px;
+//       }
+//     }
+//   }
+
+  // .social-box {
+  //   display: block !important;
+  // }
